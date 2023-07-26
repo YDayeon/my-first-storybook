@@ -11,15 +11,27 @@ type Story = StoryObj<typeof Badge>;
 
 export const Primary: Story = {
   args: {
-    label: 'Badge',
+    label: 'D-10',
+    bgColor: 'inactive',
+    boxShadow: true,
+    size: 'sm',
   },
 };
 
-export const Secondary: Story = {
+export const Modal: Story = {
   args: {
     ...Primary.args,
-    label: 'Secondary',
-    bgColor: 'warning',
+    label: '직접입력',
+    size: 'md',
+    boxShadow: true,
+  },
+};
+
+export const Notice: Story = {
+  args: {
+    ...Primary.args,
+    label: '알림 0',
+    bgColor: 'notice',
     size: 'sm',
   },
 };

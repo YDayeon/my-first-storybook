@@ -15,6 +15,9 @@ module.exports = {
       fontFamily: {
         jua: ['var(--font-jua)'],
       },
+      backgroundColor: {
+        primary: '#696cff',
+      },
     },
   },
   plugins: [],
