@@ -17,7 +17,7 @@ const SIZE = {
 
 export const Badge = ({ label, bgColor = 'primary', size = 'md' }: Props) => {
   return (
-    <button className={`py-2 ${COLOR[bgColor]} ${SIZE[size]} h-16`}>
+    <button className={`py-1 ${COLOR[bgColor]} ${SIZE[size]} text-lg`}>
       {label}
     </button>
   );

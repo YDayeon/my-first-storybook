@@ -1,6 +1,8 @@
 import type { Preview } from '@storybook/react';
+import * as React from 'react';
 
 import '../app/globals.css';
+import { jua } from '../lib/fonts';
 
 import { withThemeByClassName } from '@storybook/addon-styling';
 
@@ -25,6 +27,11 @@ const preview: Preview = {
       },
       defaultTheme: 'light',
     }),
+    (Story) => (
+      <div className={`${jua.className}`}>
+        <Story />
+      </div>
+    ),
   ],
 };
 
